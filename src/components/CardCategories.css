@@ -1,0 +1,17 @@
+.card-categories{
+    background-color: #2d2d46;
+    padding: 3rem 4rem;
+    margin: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.h2-card_categories{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.a-card_categories{
+    cursor: pointer;
+}
