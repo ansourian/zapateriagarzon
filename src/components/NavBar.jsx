@@ -7,10 +7,10 @@ export default function NavBar() {
     <div className="nav-bar">
       <h1 className="h1-navbar">ZAPATERÍA GARZON</h1>
       <div className="buttons-navbar">
-        <ButtonComponent title="Home" />
-        <ButtonComponent title="Productos" />
-        <ButtonComponent title="Contacto" />
-        <ButtonComponent title="Acerca de Nosotros" />
+        <ButtonComponent title="Home" link={"/"} />
+        <ButtonComponent title="Productos" link={"/productos"} />
+        <ButtonComponent title="Contacto" link={"/contacto"} />
+        <ButtonComponent title="Acerca de Nosotros" link={"/acerca_de"} />
       </div>
       <CartWidget />
     </div>

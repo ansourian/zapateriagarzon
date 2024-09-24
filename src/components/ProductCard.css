@@ -1,0 +1,12 @@
+.article-product {
+  border: 1px solid white;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+  color: black;
+}
+
+.img-product{
+    width: 80px;
+}
