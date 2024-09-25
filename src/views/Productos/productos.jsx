@@ -1,6 +1,6 @@
 import ProductsList from "../../components/ProductsList";
 
-export default function Productos() {
+export default function ItemListContainer() {
     return (
       <main>
         <h2>Productos</h2>
