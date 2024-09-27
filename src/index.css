@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -15,11 +18,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #ffffff;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #fff9b7;
 }
 
 body {
@@ -35,20 +38,31 @@ h1 {
   line-height: 1.1;
 }
 
-h2{
-  color: #1a1a1a;
+h2 {
+  color: #000000;
+  text-align: center;
+  font-size: 4vw;
+  margin: 0 0 2vw 0;
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
 }
 
-h3{
-  color: #1a1a1a;
+h3 {
+  color: #000000;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.3vw;
+  margin: 3vw 0;
 }
 
-h4{
-  color: #1a1a1a;
+h4 {
+  color: #000000;
 }
 
-p{
-  color: #1a1a1a;
+p {
+  color: #000000;
 }
 
 button {
@@ -81,4 +95,20 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.linea-subtitulo {
+  border-width: 0.3vw;
+  width: 8vw;
+  margin: 0 auto;
+  color: #1f2337;
+  border-style: solid;
+  opacity: 100;
+}
+
+.p-sub{
+  text-align: center;
+  font-size: 1.3vw;
+  margin: 3vw 30vw;
+  font-family: "EB Garamond", serif;
 }

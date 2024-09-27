@@ -1,30 +1,36 @@
 const products = [
     {
       id: 1,
-      title: 'Remera',
-      price: '1000',
-      category: 'deportes',
-      description: 'talles: XL, L, M, S, XS',
+      title: 'Modelo Swann',
+      price: '$ 200.000',
+      color: 'Marrón',
+      cuero: 'Vacuno',
+      category: 'Wholecut',
+      description: 'Este modelo se caracteriza por estar confeccionado a partir de una sola pieza de cuero, lo que le confiere un aspecto elegante y limpio, ya que no tiene costuras visibles en la parte superior del zapato.',
       image:
-        'https://lafabricaderemeras.com.ar/wp-content/uploads/2023/02/2-REMERAS-DEPORTIVAS-150x150.jpg',
+        '/src/assets/img/Swann.webp',
     },
     {
       id: 2,
-      title: 'Short',
-      price: '2000',
-      category: 'deportes',
-      description: 'talles: 38, 40, 42, 44, 50, 52',
+      title: 'Modelo Oxford 1122',
+      price: '$ 200.000',
+      color: 'Negro',
+      cuero: 'Vacuno',
+      category: 'Wingtip Full Brogued',
+      description: 'Un clásico atemporal, de mucha presencia. Se destaca por su gran versatilidad, tanto en lo formal como en lo casual.',
       image:
-        'https://modadeportiva.com.ar/wp-content/uploads/2015/10/Keywhoss-Shorts-deportivos-rustico-negro-para-mujer-2016-150x150.jpg',
+        '/src/assets/img/Oxford_1122.webp',
     },
     {
       id: 30,
-      title: 'Buzo',
-      price: '3000',
-      category: 'urbana',
-      description: 'Colores: rojo, azul y verde',
+      title: 'Modelo Derby 1119',
+      price: '$ 175.000',
+      color: 'Guinda',
+      cuero: 'Vacuno',
+      category: 'Captoe Semi Brogued',
+      description: 'Un clásico atemporal, de mucha presencia. Se destaca por su gran versatilidad, tanto en lo formal como en lo casual.',
       image:
-        'https://winprom.com.ar/wp-content/uploads/2020/06/buzo-1-150x150.jpg',
+        '/src/assets/img/Derby_1119.webp',
     },
   ];
   

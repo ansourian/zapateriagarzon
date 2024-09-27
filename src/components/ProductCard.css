@@ -1,12 +1,57 @@
 .article-product {
-  border: 1px solid white;
-  margin: 10px 0;
-  padding: 10px;
-  background-color: rgb(231, 231, 231);
+  margin: 2rem;
+  padding: 0 2rem 1rem;
+  background-color: rgb(255 255 255);
   border-radius: 10px;
   color: black;
+  box-shadow: 0px 2px 9px #0000009c;
 }
 
-.img-product{
-    width: 80px;
+.img-product {
+  width: 300px;
+}
+
+.h3-product {
+  font-family: "Outfit", sans-serif;
+  color: #29395c;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin: 1rem;
+}
+
+.p-product {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.button-product {
+  font-family: "Outfit", sans-serif;
+  background-color: #ffffff;
+  border: 3px solid #1F2337;
+  color: rgb(0, 0, 0);
+  padding: 0.5vw 1vw;
+  text-decoration: none;
+  font-size: 0.8vw;
+  transition: 0.3s;
+}
+
+.button-product:hover {
+  background-color: #1F2337;
+  transition: 0.3s;
+  border: 3px solid #1F2337;
+}
+.button-product:hover .link-button {
+  color: #ffffff;
+}
+
+.link-button {
+  font-family: "Outfit", sans-serif;
+  color: #1F2337;
+  font-weight: 500;
+}
+
+.link-button:hover { 
+  color: red; 
+  font-weight: 500;
 }

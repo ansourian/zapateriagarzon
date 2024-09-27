@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getProducts } from '../asyncMock.js';
 import ProductCard from './ProductCard';
+import "../components/ProductsList.css";
 
 export default function ProductsList() {
   const [products, setProducts] = useState([]);
@@ -11,7 +12,7 @@ export default function ProductsList() {
 
   return (
     <>
-      <section>
+      <section className='section-products'>
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
