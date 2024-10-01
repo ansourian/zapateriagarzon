@@ -44,10 +44,8 @@ const products = [
     return products.find((prod) => prod.id == id);
   };
   
-  //falta getCategory -> filter
   
   export const getCategory = (category) => {
     return products.filter((product) => product.category === category);
-    //va a retornar un array de prods que cumplan con esa condicion
   };
   
