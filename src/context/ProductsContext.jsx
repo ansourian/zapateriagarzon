@@ -1,18 +1,18 @@
-import { createContext, useEffect, useState } from "react";
-import {getProducts} from "../asyncMock"
+import { createContext, useEffect, useState, useContext } from "react";
+import { getProducts } from "../asyncMock";
 
 export const ProductsContext = createContext(false);
 
-export function ProductsProvider({children}){
+export function ProductsProvider({ children }) {
     const [products, setProducts] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         getProducts().then(data => setProducts(data));
-    },[]);
+    }, []);
 
-    return(
+    return (
         <ProductsContext.Provider value={[products, setProducts]}>
             {children}
         </ProductsContext.Provider>
-    )
+    );
 }
