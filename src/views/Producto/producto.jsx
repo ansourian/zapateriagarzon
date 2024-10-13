@@ -1,15 +1,22 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getProduct } from "../../asyncMock";
 import "./producto.css";
+import { CartContext } from "../../context/CartContext";
 
 export default function ItemDetailContainer() {
-  const [product, setProduct] = useState({})
+  const [product, setProduct] = useState({});
   const { id } = useParams();
 
   useEffect(() => {
-    setProduct(getProduct(id))
+    setProduct(getProduct(id));
   }, []);
+
+  const [, , addItem] = useContext(CartContext)
+
+  const handleClick = () => {
+    addItem(product)
+  }
 
   return (
     <>
@@ -31,6 +38,14 @@ export default function ItemDetailContainer() {
             <p className="p-info">{product.color}</p>
             <p className="p-title">Tipo de cuero:</p>
             <p className="p-info">{product.cuero}</p>
+            <div className="div-button_cart_container">
+              <div></div>
+              <div className="div-button_cart">
+                <button className="button-product2" onClick={handleClick}>
+                  AGREGAR AL CARRITO
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </article>

@@ -8,6 +8,7 @@ import ItemDetailContainer from "./views/Producto/producto"
 import ItemListContainer from "./views/Productos/productos"
 import { ProductsProvider } from "./context/ProductsContext"
 import { CartProvider } from "./context/CartContext"
+import Cart from "./views/Cart/cart"
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               ></Route>
               <Route exact path="/contacto" element={<Contacto />}></Route>
               <Route exact path="/acerca_de" element={<AcercaDe />}></Route>
+              <Route exact path="/cart" element={<Cart />}></Route>
               <Route
                 exact
                 path="/producto/:id"

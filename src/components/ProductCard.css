@@ -28,8 +28,8 @@
 .button-product {
   font-family: "Outfit", sans-serif;
   background-color: #ffffff;
-  border: 3px solid #1F2337;
-  color: rgb(0, 0, 0);
+  border: 2px solid #1F2337;
+  color: #1F2337;
   padding: 0.5vw 1vw;
   text-decoration: none;
   font-size: 0.8vw;
@@ -40,8 +40,10 @@
 .button-product:hover {
   background-color: #1F2337;
   transition: 0.3s;
-  border: 3px solid #1F2337;
+  border: 2px solid #1F2337;
+  color: #ffffff;
 }
+
 .button-product:hover .link-button {
   color: #ffffff;
 }
@@ -53,6 +55,5 @@
 }
 
 .link-button:hover { 
-  color: red; 
   font-weight: 500;
 }
