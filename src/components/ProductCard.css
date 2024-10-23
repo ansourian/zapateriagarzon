@@ -57,3 +57,8 @@
 .link-button:hover { 
   font-weight: 500;
 }
+
+.div-card_buttons{
+  display: flex;
+  flex-direction: row;
+}
