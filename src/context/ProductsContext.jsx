@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react"
-import { getProducts } from "../asyncMock"
+import { getProducts } from "../firebase/firebase"
 
 export const ProductsContext = createContext(false)
 

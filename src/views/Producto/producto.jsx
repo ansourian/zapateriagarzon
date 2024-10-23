@@ -1,16 +1,21 @@
-import { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { getProduct } from "../../asyncMock";
-import "./producto.css";
-import { CartContext } from "../../context/CartContext";
+import { useContext, useEffect, useState } from "react"
+import { useParams } from "react-router-dom"
+import "./producto.css"
+import { CartContext } from "../../context/CartContext"
+import { getSingleProduct } from "../../firebase/firebase"
+import { ProductImages } from "../../ImageRepository"
 
 export default function ItemDetailContainer() {
-  const [product, setProduct] = useState({});
-  const { id } = useParams();
+  const [product, setProduct] = useState({})
+  const [productImg, setProductImg] = useState()
+  const { id } = useParams()
 
   useEffect(() => {
-    setProduct(getProduct(id));
-  }, []);
+    getSingleProduct(id).then((prod) => {
+      setProduct(prod)
+      if (prod) setProductImg(ProductImages[id])
+    })
+  }, [])
 
   const [, , addItem] = useContext(CartContext)
 
@@ -22,7 +27,7 @@ export default function ItemDetailContainer() {
     <>
       <article className="article-detail">
         <div>
-          <img className="img-detail" src={product.image} alt={product.title} />
+          <img className="img-detail" src={productImg} alt={product.title} />
         </div>
         <div>
           <div>
@@ -50,5 +55,5 @@ export default function ItemDetailContainer() {
         </div>
       </article>
     </>
-  );
+  )
 }
