@@ -31,7 +31,6 @@ const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
 
-//obtener un producto
 export async function getSingleProduct(id) {
     const documentRef = doc(db, 'products', id);
   
@@ -47,7 +46,6 @@ export async function getSingleProduct(id) {
     }
 }
 
-//obtener toda una coleccion
 export async function getProducts() {
     try {
       const querySnapshot = await getDocs(collection(db, 'products'));
