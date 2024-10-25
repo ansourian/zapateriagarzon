@@ -32,7 +32,7 @@ export default function ItemDetailContainer() {
         <div>
           <div>
             <h2 className="h2-detail">{product.title}</h2>
-            <h3 className="h3-detail">{product.category}</h3>
+            <h3 className="h3-detail">{product.style}</h3>
           </div>
           <div className="div-info">
             <p className="p-title">Descripción:</p>

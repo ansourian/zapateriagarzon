@@ -64,3 +64,15 @@ export async function getProducts() {
       console.error('Error al obtener el documento: ', error);
     }
   }
+
+  export async function sendOrder(order) {
+    const ordersCollection = collection(db, 'orders');
+  
+    try {
+      const docRef = await addDoc(ordersCollection, order);
+      console.log('Nueva orden generada: ' + docRef.id);
+      return docRef.id;
+    } catch (error) {
+      console.log('Error al agregar el documento: ' + error);
+    }
+  }
