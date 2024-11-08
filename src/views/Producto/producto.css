@@ -3,11 +3,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0 10rem;
+    margin: 4rem 10rem;
 }
 
 .img-detail{
-    width: 600px;
+    width: 35vw;
 }
 
 .h2-detail{
@@ -45,7 +45,7 @@
 }
 
 .div-info{
-    margin: 1rem 10rem;
+    margin: 1rem;
 }
 
 .button-product2 {
@@ -69,6 +69,12 @@
 
   .div-button_cart_container{
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     margin: 1rem 0 0;
+  }
+
+  .quantity-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }

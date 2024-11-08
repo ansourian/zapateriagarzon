@@ -4,9 +4,11 @@ import "./producto.css"
 import { CartContext } from "../../context/CartContext"
 import { getSingleProduct } from "../../firebase/firebase"
 import { ProductImages } from "../../ImageRepository"
+import { FaMinus, FaPlus } from "react-icons/fa"
 
 export default function ItemDetailContainer() {
   const [product, setProduct] = useState({})
+  const [addProductCount, setAddProductCount] = useState(1)
   const [productImg, setProductImg] = useState()
   const { id } = useParams()
 
@@ -17,10 +19,20 @@ export default function ItemDetailContainer() {
     })
   }, [])
 
-  const [, , addItem] = useContext(CartContext)
-
   const handleClick = () => {
-    addItem(product)
+    addItem(product, addProductCount)
+  }
+
+  const [, , addItem, removeItem] = useContext(CartContext)
+
+  const handleSubstractCount = () => {
+    let newCount = addProductCount - 1
+    if (newCount < 1) newCount = 1
+    setAddProductCount(newCount)
+  }
+
+  const handleAddCount = () => {
+    setAddProductCount(addProductCount + 1)
   }
 
   return (
@@ -45,6 +57,19 @@ export default function ItemDetailContainer() {
             <p className="p-info">{product.cuero}</p>
             <div className="div-button_cart_container">
               <div></div>
+              <div className="quantity-controls">
+                <button
+                  className="button-product"
+                  onClick={handleSubstractCount}
+                >
+                  <FaMinus />
+                </button>
+                <span className="p-info">{addProductCount}</span>
+                <button className="button-product" onClick={handleAddCount}>
+                  <FaPlus />
+                </button>
+              </div>
+
               <div className="div-button_cart">
                 <button className="button-product2" onClick={handleClick}>
                   AGREGAR AL CARRITO

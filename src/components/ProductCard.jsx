@@ -27,9 +27,6 @@ export default function ProductCard({ product }) {
               VER MODELO
             </Link>
           </button>
-          <button className="button-product" onClick={handleClick}>
-            AGREGAR AL CARRITO
-          </button>
         </div>
       </article>
     </>
