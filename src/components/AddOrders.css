@@ -104,3 +104,25 @@ input:-webkit-autofill:active{
 .button-cerrar{
     margin: 1vw;
 }
+
+.button-product4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  background-color: #ffffff;
+  border: 2px solid #1F2337;
+  color: #1F2337;
+  padding: 0.5vw 1vw;
+  text-decoration: none;
+  font-size: 0.8vw;
+  transition: 0.3s;
+  margin: 0 0.5rem;
+}
+
+.button-product4:hover {
+  background-color: #1F2337;
+  transition: 0.3s;
+  border: 2px solid #1F2337;
+  color: #ffffff;
+}

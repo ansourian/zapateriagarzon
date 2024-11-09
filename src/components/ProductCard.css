@@ -30,11 +30,11 @@
   background-color: #ffffff;
   border: 2px solid #1F2337;
   color: #1F2337;
-  padding: 0.5vw 1vw;
   text-decoration: none;
   font-size: 0.8vw;
   transition: 0.3s;
   margin: 0 0.5rem;
+  padding: 0 !important;
 }
 
 .button-product:hover {
@@ -52,6 +52,7 @@
   font-family: "Outfit", sans-serif;
   color: #1F2337;
   font-weight: 500;
+  padding: 1vw;
 }
 
 .link-button:hover { 

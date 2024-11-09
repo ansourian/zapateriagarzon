@@ -1,9 +1,5 @@
-# React + Vite
+# Zapatería Garzón
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Es un proyecto ficticio del alumno Jair Ansourian del curso de React Js de Coderhouse, el cual consiste en crear un sitio web e-commerce con la tecnología de React Js y conectado a una base de datos de Firebase.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# zapateriagarzon
+Toda la información y productos de este proyecto no son reales y fueron utilizados únicamente con el proposito de la cursada.

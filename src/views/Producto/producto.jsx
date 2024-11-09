@@ -59,13 +59,13 @@ export default function ItemDetailContainer() {
               <div></div>
               <div className="quantity-controls">
                 <button
-                  className="button-product"
+                  className="button-product3"
                   onClick={handleSubstractCount}
                 >
                   <FaMinus />
                 </button>
                 <span className="p-info">{addProductCount}</span>
-                <button className="button-product" onClick={handleAddCount}>
+                <button className="button-product3" onClick={handleAddCount}>
                   <FaPlus />
                 </button>
               </div>

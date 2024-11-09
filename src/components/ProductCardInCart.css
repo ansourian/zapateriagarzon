@@ -60,6 +60,7 @@
     font-family: "Outfit", sans-serif;
     color: #1F2337;
     font-weight: 500;
+    padding: 0.5vw !important;
   }
   
   .link-button:hover { 

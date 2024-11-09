@@ -42,11 +42,11 @@ export default function ProductCardInCart({ product }) {
       </div>
       <div className="div-card_button">
         <div className="quantity-controls">
-          <button className="button-product" onClick={handleRemoveClick}>
+          <button className="button-product3" onClick={handleRemoveClick}>
             <FaMinus />
           </button>
           <span>{product.cantidad}</span>
-          <button className="button-product" onClick={handleAddClick}>
+          <button className="button-product3" onClick={handleAddClick}>
             <FaPlus />
           </button>
         </div>
@@ -55,7 +55,7 @@ export default function ProductCardInCart({ product }) {
             VER MODELO
           </Link>
         </button>
-        <button className="button-product" onClick={handleRemoveAll}>
+        <button className="button-product3" onClick={handleRemoveAll}>
           <FaTrashAlt />
         </button>
       </div>

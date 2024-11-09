@@ -51,7 +51,7 @@ export default function AddOrders() {
     
   return (
     <>
-      <button className="button-product" onClick={handleClick}>
+      <button className="button-product4" onClick={handleClick}>
         Generar Orden
       </button>
       {showModal && (

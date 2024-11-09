@@ -67,6 +67,28 @@
     color: #ffffff;
   }
 
+  .button-product3 {
+    display: flex;
+    font-family: "Outfit", sans-serif;
+    background-color: #ffffff;
+    border: 2px solid #1F2337;
+    color: #1F2337;
+    padding: 0.5vw 0.6vw;
+    text-decoration: none;
+    font-size: 0.8vw;
+    transition: 0.3s;
+    margin: 0 10px !important;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button-product3:hover {
+    background-color: #1F2337;
+    transition: 0.3s;
+    border: 2px solid #1F2337;
+    color: #ffffff;
+  }
+
   .div-button_cart_container{
     display: flex;
     justify-content: right;
